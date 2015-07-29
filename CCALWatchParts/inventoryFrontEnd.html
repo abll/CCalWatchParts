@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<script src="http://localhost/CCALWatchParts/Scripts/newUserFormScript.js"></script> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Inventory Page</title>
+    </head>
+    <body>
+        <form action = "http://localhost/CCALWatchParts/inventoryPage.php" method= "post">
+        <div>
+        <label for="sLabel">Enter Model Number or Part Number To View Quantity In Stock</label><br>
+        <select>
+            <option value="sMode">Model Number</option>
+            <option value="SPNum">Part Number</option>
+        </select>
+        <input type ="text" id="searchQ" name="searchName"/>
+        <button type="submit" id=" searchBtn">Go</button><br><br>
+        </div>
+        <div>
+        <label for="uLabel">Enter Model Number or Part Number To Update Quantity In Stock</label><br>
+        <select>
+            <option value="uMode">Model Number</option>
+            <option value="UPNum">Part Number</option>
+        </select>
+        <input type ="text" id="updateQ" name="updateName"/>
+            <button type="submit" id=" updateBtn">Go</button><br><br>
+            </div>
+             <p>Click Link Below To Show Complete Inventory</p>
+             <input type ="text" id="partNum" name="searchPartNum"/>
+             <button type="submit" id=" dispAllBtn">Go</button><br><br>
+        </form>
+    </body>
+</html>
